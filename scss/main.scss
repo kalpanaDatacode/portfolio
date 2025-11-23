@@ -1,0 +1,189 @@
+.custom-progress {
+  position: relative;
+  background-color: #e0e0e0;
+  height: 6px;
+  border-radius: 5px;
+}
+
+.custom-progress-fill {
+  position: relative;
+  background-color: #fd6200;
+  height: 100%;
+  border-radius: 5px;
+  transition: width 0.5s ease-in-out;
+}
+
+.custom-progress-circle {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(50%, -50%);
+  width: 16px;
+  height: 16px;
+  background-color: white;
+  border: 3px solid #fd6200;
+  border-radius: 50%;
+}
+
+.filter-btn {
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #FD6F00 !important;
+  color: #fff !important;
+}
+
+
+.testimonials-scroll {
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 1rem;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.testimonial-card {
+  flex: 0 0 70%;
+  transition: all 0.3s ease;
+}
+
+.testimonial-card.inactive {
+  opacity: 0.4;
+  filter: blur(2px);
+  transform: scale(0.9);
+}
+
+.testimonial-card.active {
+  opacity: 1;
+  filter: none;
+  transform: scale(1);
+}
+
+.rect-btn {
+  border: 1px solid #ccc;
+  background: #f8f9fa;
+  padding: 6px 16px;
+  margin: 0 4px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.rect-btn.active {
+  background: #FD6F00;
+  color: #fff;
+  border-color: fd6f00;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.testimonial-card.active {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+.testimonial-card.inactive {
+  opacity: 0.5;
+}
+
+.custom-btn {
+  background-color: #fd6f00;
+  border: none;
+  color: #fff;
+
+}
+
+.custom-btn:hover {
+  background-color: #e65d00;
+  color: #fff;
+}
+
+.brand-color {
+  color: #fd6f00;
+}
+
+//assignment 
+.ds-section {
+  .ds-heading {
+    font-size: 38px;
+    font-weight: 700;
+    color: black; // changed to orange
+     align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .sub-heading {
+    font-size: 22px;
+    font-weight: 600;
+    color: #e65d00; // changed to orange
+  }
+
+  .ds-box {
+    background: #fafafa;
+    border: 1px solid #eaeaea;
+  }
+
+  .video-link {
+    text-decoration: none;
+    color: black; // changed to orange
+   
+    font-weight: 500;
+
+    &:hover {
+      text-decoration: underline;
+      color: #e65d00; // stronger orange
+    }
+  }
+
+  .cert-card {
+    border: 1px solid #ddd;
+
+    .card-title {
+      font-size: 18px;
+      font-weight: 600;
+      color: black; // changed to orange
+    }
+
+    .card-text {
+      color: #555;
+    }
+    .btn{
+      background-color: #e65d00 !important;
+      color: #fff;
+
+    }
+  }
+
+  // Override bootstrap button color
+  .btn-primary {
+    background-color: #e65d00 !important;
+    border-color: #e65d00!important;
+    color: #fff !important;
+
+    &:hover {
+      background-color: #e65d00 !important;
+      border-color: #e65d00 !important;
+    }
+  }
+
+  // Achievements checkmark text
+  .list-group-item {
+    color: black; // orange text
+  }
+}
